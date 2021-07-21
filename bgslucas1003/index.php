@@ -6,7 +6,7 @@ include('includes/head.php');
 defined('CONFIG') || exit;
 ?>
 </head>
-<body data-spy="scroll" data-target="#nav-menu-container" data-offset="50">
+<body>
 
     <?php include 'includes/topo.php'; ?>
     <?php include 'includes/slider.php'; ?>
@@ -35,9 +35,6 @@ defined('CONFIG') || exit;
 
         </div>
 </section>
-<br>
-<br>
-<br>
     
  <section id="curriculo">
             <div class="row ajust-row">
@@ -108,14 +105,13 @@ defined('CONFIG') || exit;
                             </div>
                         </div>
                     </div>
-                        <br><br>
                     <div class="col-md-3 col-6 service-card" >
                         <div class="service-card-ajust">
                             <div class="service-card-img">
                                 <img src="img/grande/talk.png" alt="União de casais" title="União de casais">
                             </div>
                             <div class="service-card-title1">
-                                <br>
+
                                 <h5>
                                    IDIOMAS
                                 </h5>
@@ -137,7 +133,6 @@ defined('CONFIG') || exit;
                             </div> 
                         </div>
                     </div>
-                          <br><br>
                     <div class="col-md-3 col-6 service-card" >
                         <div class="service-card-ajust">
                             <div class="service-card-img">
@@ -330,71 +325,7 @@ defined('CONFIG') || exit;
 
 </section>
 
-<?php if ($exibirVoltarParaOTopo == true): ?> <a href="#" class="voltar-para-o-topo"></a> <?php endif ?>
-<?php include 'scripts.php'; ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 
-
- <!-- <script>
-    jQuery("input.telefone")
-        .mask("(99) 9999-9999?9")
-        .focusout(function (event) {
-            var target, phone, element;
-            target = (event.currentTarget) ? event.currentTarget : event.srcElement;
-            phone = target.value.replace(/\D/g, '');
-            element = $(target);
-            element.unmask();
-            if (phone.length > 10) {
-                element.mask("(99) 99999-999?9");
-            } else {
-                element.mask("(99) 9999-9999?9");
-            }
-        });
-</script>
-<script>
-    $(document).ready(function () {
-
-        $("#unidade1").click(function () {
-            $("#mapa1").show();
-            $("#mapa2").hide();
-        });
-        $("#unidademob1").click(function () {
-            $("#mapamob1").show();
-            $("#mapamob2").hide();
-        });
-        $("#unidade2").click(function () {
-            $("#mapa2").show();
-            $("#mapa1").hide();
-        });
-        $("#unidademob2").click(function () {
-            $("#mapamob2").show();
-            $("#mapamob1").hide();
-        });
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-        $('.nav-button').click(function () {
-            $('body').toggleClass('nav-open');
-        });
-        $('.remove-contato').click(function(){
-            $('body').toggleClass('nav-open');
-        });
-    });
-</script> -->
-
-<script src="js/aos.js"></script>
-<script>
-
-    AOS.init({
-        duration: 1200,
-        easing: 'ease-in-out-back'
-    });
-</script> 
 
 
 </body>
